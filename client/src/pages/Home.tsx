@@ -7,6 +7,7 @@ import AboutSection from '@/components/AboutSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 
+
 const Home = () => {
   // Function to scroll to a specific section
   const scrollToSection = (id: string) => {

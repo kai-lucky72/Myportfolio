@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'wouter';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
+import ThemeToggle from './ThemeToggle';
 
 interface NavbarProps {
   scrollToSection: (id: string) => void;
@@ -76,12 +77,15 @@ const Navbar: React.FC<NavbarProps> = ({ scrollToSection }) => {
           ))}
         </div>
         
-        <Button 
-          className="hidden md:inline-flex bg-primary hover:bg-primary/90 text-white px-5 py-6 rounded-lg font-medium shadow-lg shadow-primary/20 transition-all text-sm"
-          onClick={() => handleNavLinkClick('contact')}
-        >
-          GET IN TOUCH
-        </Button>
+        <div className="hidden md:flex items-center gap-4">
+          <ThemeToggle />
+          <Button 
+            className="bg-primary hover:bg-primary/90 text-white px-5 py-6 rounded-lg font-medium shadow-lg shadow-primary/20 transition-all text-sm"
+            onClick={() => handleNavLinkClick('contact')}
+          >
+            GET IN TOUCH
+          </Button>
+        </div>
         
         <Button 
           variant="ghost" 
@@ -112,12 +116,15 @@ const Navbar: React.FC<NavbarProps> = ({ scrollToSection }) => {
               {link.label}
             </a>
           ))}
-          <Button 
-            className="bg-primary hover:bg-primary/90 text-white px-6 py-5 rounded-lg font-medium shadow-lg shadow-primary/20 transition-all text-center mt-6 w-40"
-            onClick={() => handleNavLinkClick('contact')}
-          >
-            GET IN TOUCH
-          </Button>
+          <div className="flex flex-col items-center gap-5">
+            <ThemeToggle className="mt-2" />
+            <Button 
+              className="bg-primary hover:bg-primary/90 text-white px-6 py-5 rounded-lg font-medium shadow-lg shadow-primary/20 transition-all text-center w-40"
+              onClick={() => handleNavLinkClick('contact')}
+            >
+              GET IN TOUCH
+            </Button>
+          </div>
         </div>
         
         <div className="absolute bottom-20 flex gap-8 text-gray-400 text-2xl">
