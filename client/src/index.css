@@ -144,15 +144,23 @@
 
   /* Theme specific utility classes */
   .theme-border-color {
-    @apply border-gray-800 light-mode:border-gray-200;
+    @apply border-gray-800 light-mode:border-gray-200 transition-colors duration-200;
   }
 
   .theme-bg {
-    @apply bg-black/80 light-mode:bg-white/90;
+    @apply bg-black/80 light-mode:bg-white/90 light-mode:text-gray-900 transition-colors duration-200;
   }
 
   .theme-card-bg {
-    @apply bg-black/80 backdrop-blur-lg light-mode:bg-white/90 light-mode:backdrop-blur-lg;
+    @apply bg-black/80 backdrop-blur-lg light-mode:bg-white/90 light-mode:backdrop-blur-lg light-mode:text-gray-900 transition-all duration-200;
+  }
+
+  .light-mode {
+    @apply text-gray-900 bg-white;
+  }
+
+  .light-mode * {
+    @apply transition-colors duration-200;
   }
 
   h1, h2, h3, h4, h5, h6 {
