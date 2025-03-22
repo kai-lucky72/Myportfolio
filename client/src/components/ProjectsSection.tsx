@@ -5,7 +5,8 @@ import { Project } from '@/types';
 
 const ProjectsSection = () => {
   return (
-    <section id="projects" className="py-20 relative">
+    <section id="projects" className="py-24 relative">
+      <div className="absolute inset-0 bg-gradient-to-b from-black/0 via-primary/5 to-black/0 pointer-events-none"></div>
       <div className="container mx-auto px-4">
         <motion.div 
           className="mb-16 text-center"
@@ -14,10 +15,13 @@ const ProjectsSection = () => {
           transition={{ duration: 0.5 }}
           viewport={{ once: true, margin: "-100px" }}
         >
-          <p className="text-[#8B5CF6] font-medium">SHOWCASING MY WORK</p>
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mt-2">AI Projects & Case Studies</h2>
-          <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
-            A collection of my most significant AI and machine learning projects, demonstrating my technical expertise and problem-solving abilities.
+          <p className="text-primary font-medium tracking-wider">FEATURED PROJECTS</p>
+          <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mt-3 flex flex-col md:flex-row items-center justify-center gap-3">
+            <span>My</span> 
+            <span className="bg-gradient-to-r from-primary to-[#0EA5E9] bg-clip-text text-transparent">Technical Portfolio</span>
+          </h2>
+          <p className="text-gray-400 mt-6 max-w-2xl mx-auto text-lg">
+            A showcase of my high-performance applications, complex systems, and technical solutions that solve real-world problems.
           </p>
         </motion.div>
         
@@ -36,7 +40,7 @@ const ProjectsSection = () => {
         </div>
         
         <motion.div 
-          className="text-center mt-12"
+          className="text-center mt-16"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
@@ -46,9 +50,9 @@ const ProjectsSection = () => {
             href="https://github.com/" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-white bg-[#1E293B] hover:bg-[#334155] px-6 py-3 rounded-lg font-medium transition-all border border-gray-700"
+            className="inline-flex items-center gap-3 text-white bg-gradient-to-r from-gray-900 to-black hover:from-primary/90 hover:to-primary/70 px-8 py-4 rounded-lg font-medium transition-all border border-gray-800 hover:border-primary/50 shadow-lg text-lg"
           >
-            <i className="fab fa-github"></i> View More on GitHub
+            <i className="fab fa-github text-xl"></i> View More Projects on GitHub
           </a>
         </motion.div>
       </div>

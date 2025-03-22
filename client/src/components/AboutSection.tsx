@@ -7,8 +7,9 @@ interface AboutSectionProps {
 
 const AboutSection: React.FC<AboutSectionProps> = ({ scrollToSection }) => {
   return (
-    <section id="about" className="py-20">
-      <div className="container mx-auto px-4">
+    <section id="about" className="py-24 relative">
+      <div className="absolute inset-0 bg-gradient-to-t from-black via-[#0c1220]/60 to-black pointer-events-none"></div>
+      <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <motion.div 
             className="order-2 md:order-1"
@@ -17,42 +18,53 @@ const AboutSection: React.FC<AboutSectionProps> = ({ scrollToSection }) => {
             transition={{ duration: 0.5 }}
             viewport={{ once: true, margin: "-100px" }}
           >
-            <p className="text-[#8B5CF6] font-medium">ABOUT ME</p>
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mt-2 mb-6">
-              AI Engineer with a passion for solving complex problems
+            <p className="text-primary font-medium tracking-wider">MY BACKGROUND</p>
+            <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mt-3 mb-8 flex flex-col gap-1">
+              <span>Engineering</span>
+              <span className="bg-gradient-to-r from-primary to-[#0EA5E9] bg-clip-text text-transparent">Excellence</span>
             </h2>
-            <p className="text-gray-300 mb-4">
-              I'm a skilled AI engineer with over 5 years of experience developing innovative machine learning solutions across various domains. My expertise lies in creating intelligent systems that leverage state-of-the-art AI techniques to solve real-world problems.
+            <p className="text-gray-300 mb-6 text-lg">
+              Senior software engineer and system architect with 8+ years of experience building high-performance applications and scalable infrastructures for enterprise clients. Specializing in modern web technologies, distributed systems, and cloud architecture.
             </p>
-            <p className="text-gray-300 mb-6">
-              I've successfully delivered projects ranging from computer vision applications to natural language processing systems. My approach combines strong technical skills with a deep understanding of business requirements, ensuring that AI solutions deliver tangible value.
+            <p className="text-gray-300 mb-8 text-lg">
+              Passionate about creating elegant solutions to complex technical challenges. My approach combines cutting-edge technologies with sound architectural principles to deliver robust, maintainable, and efficient software systems.
             </p>
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
-              <div>
-                <h3 className="text-white font-heading font-bold text-lg mb-3">Education</h3>
-                <ul className="space-y-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 mb-10">
+              <div className="bg-black/30 backdrop-blur-sm p-6 rounded-xl border border-gray-800 shadow-xl">
+                <h3 className="text-white font-heading font-bold text-lg mb-4 flex items-center gap-2">
+                  <span className="h-6 w-6 bg-primary/20 text-primary rounded-md flex items-center justify-center">
+                    <i className="fas fa-graduation-cap text-sm"></i>
+                  </span>
+                  Education
+                </h3>
+                <ul className="space-y-4">
                   <li className="text-gray-400">
-                    <p className="text-white">MS in Artificial Intelligence</p>
-                    <p>Stanford University, 2018</p>
+                    <p className="text-white font-medium">MS in Computer Science</p>
+                    <p>Stanford University, 2017</p>
                   </li>
                   <li className="text-gray-400">
-                    <p className="text-white">BS in Computer Science</p>
-                    <p>MIT, 2016</p>
+                    <p className="text-white font-medium">BS in Software Engineering</p>
+                    <p>MIT, 2015</p>
                   </li>
                 </ul>
               </div>
               
-              <div>
-                <h3 className="text-white font-heading font-bold text-lg mb-3">Experience</h3>
-                <ul className="space-y-3">
+              <div className="bg-black/30 backdrop-blur-sm p-6 rounded-xl border border-gray-800 shadow-xl">
+                <h3 className="text-white font-heading font-bold text-lg mb-4 flex items-center gap-2">
+                  <span className="h-6 w-6 bg-[#0EA5E9]/20 text-[#0EA5E9] rounded-md flex items-center justify-center">
+                    <i className="fas fa-briefcase text-sm"></i>
+                  </span>
+                  Experience
+                </h3>
+                <ul className="space-y-4">
                   <li className="text-gray-400">
-                    <p className="text-white">Senior AI Engineer</p>
-                    <p>Tech Innovations Inc., 2020-Present</p>
+                    <p className="text-white font-medium">Lead System Architect</p>
+                    <p>TechForge Solutions, 2020-Present</p>
                   </li>
                   <li className="text-gray-400">
-                    <p className="text-white">ML Research Scientist</p>
-                    <p>AI Solutions Lab, 2018-2020</p>
+                    <p className="text-white font-medium">Senior Software Engineer</p>
+                    <p>InnovateX Labs, 2017-2020</p>
                   </li>
                 </ul>
               </div>
@@ -60,18 +72,18 @@ const AboutSection: React.FC<AboutSectionProps> = ({ scrollToSection }) => {
             
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
-                className="bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-lg font-medium shadow-lg shadow-primary/20 transition-all"
+                className="bg-primary hover:bg-primary/90 text-white px-6 py-6 rounded-lg font-medium shadow-lg shadow-primary/20 transition-all text-base"
                 onClick={() => scrollToSection('contact')}
               >
-                Get in Touch
+                GET IN TOUCH
               </Button>
               <a 
                 href="/resume.pdf" 
-                className="bg-transparent text-white border border-white/20 hover:border-white/50 px-6 py-3 rounded-lg font-medium transition-all flex items-center justify-center gap-2"
+                className="bg-gradient-to-r from-gray-900 to-black hover:from-gray-800 hover:to-gray-900 text-white border border-gray-800 hover:border-primary/50 px-6 py-6 rounded-lg font-medium transition-all flex items-center justify-center gap-3 text-base shadow-xl"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fas fa-download"></i> Download Resume
+                <i className="fas fa-download"></i> DOWNLOAD RESUME
               </a>
             </div>
           </motion.div>
@@ -83,42 +95,42 @@ const AboutSection: React.FC<AboutSectionProps> = ({ scrollToSection }) => {
             transition={{ duration: 0.5 }}
             viewport={{ once: true, margin: "-100px" }}
           >
-            <div className="relative w-full h-[500px] overflow-hidden rounded-2xl">
-              <img 
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop" 
-                alt="Professional portrait" 
-                className="w-full h-full object-cover"
-              />
+            <div className="relative w-full h-[520px] overflow-hidden rounded-2xl border-2 border-gray-800 shadow-2xl">
+              {/* This is where the user's image will go */}
+              <div className="w-full h-full bg-gradient-to-br from-gray-900 to-black flex items-center justify-center">
+                <p className="text-white text-center px-8">Your personal image will be placed here</p>
+              </div>
+              <div className="absolute inset-0 border-[20px] border-black/40 pointer-events-none"></div>
             </div>
             
             <motion.div 
-              className="absolute -bottom-6 -right-6 bg-[#111827] p-4 rounded-xl border border-gray-700 shadow-xl max-w-[280px]"
+              className="absolute -bottom-8 -right-8 bg-black/80 backdrop-blur-lg p-6 rounded-xl border border-gray-800 shadow-2xl max-w-[320px]"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <div className="flex items-center gap-4 mb-3">
-                <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
-                  <i className="fas fa-award text-white"></i>
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center border border-primary/30">
+                  <i className="fas fa-award text-primary text-xl"></i>
                 </div>
                 <div>
-                  <h4 className="text-white font-medium">Achievements</h4>
-                  <p className="text-gray-400 text-sm">Recent recognition</p>
+                  <h4 className="text-white font-bold text-lg">Achievements</h4>
+                  <p className="text-gray-400 text-sm">Notable recognition</p>
                 </div>
               </div>
-              <ul className="space-y-2 text-sm">
-                <li className="flex items-center gap-2 text-gray-300">
-                  <i className="fas fa-check-circle text-[#8B5CF6]"></i>
-                  <span>Best AI Paper Award - 2022</span>
+              <ul className="space-y-3">
+                <li className="flex items-start gap-3 text-gray-300">
+                  <i className="fas fa-check-circle text-primary mt-1"></i>
+                  <span>Tech Leadership Award 2023</span>
                 </li>
-                <li className="flex items-center gap-2 text-gray-300">
-                  <i className="fas fa-check-circle text-[#8B5CF6]"></i>
-                  <span>Global AI Hackathon Winner</span>
+                <li className="flex items-start gap-3 text-gray-300">
+                  <i className="fas fa-check-circle text-primary mt-1"></i>
+                  <span>5 Patents in Software Systems</span>
                 </li>
-                <li className="flex items-center gap-2 text-gray-300">
-                  <i className="fas fa-check-circle text-[#8B5CF6]"></i>
-                  <span>3 Patents in ML Technologies</span>
+                <li className="flex items-start gap-3 text-gray-300">
+                  <i className="fas fa-check-circle text-primary mt-1"></i>
+                  <span>Top 1% Stack Overflow Contributor</span>
                 </li>
               </ul>
             </motion.div>
