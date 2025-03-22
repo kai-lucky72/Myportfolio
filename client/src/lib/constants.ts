@@ -4,6 +4,9 @@ import { Project, Skill, CoreCompetency } from '@/types';
 export const userInfo = {
   name: "Lucky Kagabo",
   email: "kagabolucky72@gmail.com",
+  phone: "+250723374650",
+  location: "Kigali, Rwanda",
+  education: "Year 2 - Rwanda Coding Academy, Nyabihu",
   github: "https://github.com/kai-lucky72",
   profileImage: "/images/profile-image.png"
 };
