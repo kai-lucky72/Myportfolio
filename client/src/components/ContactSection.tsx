@@ -102,8 +102,8 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="text-white font-medium mb-1 text-lg">Email</h4>
-                    <a href="mailto:contact@techportfolio.com" className="text-gray-400 hover:text-primary transition-colors">
-                      contact@techportfolio.com
+                    <a href="mailto:kagabolucky72@gmail.com" className="text-gray-400 hover:text-primary transition-colors">
+                      kagabolucky72@gmail.com
                     </a>
                   </div>
                 </div>
@@ -137,7 +137,7 @@ const ContactSection = () => {
                 <h4 className="text-white font-bold mb-4 text-lg">Connect on Social Media</h4>
                 <div className="flex gap-4">
                   <a 
-                    href="https://github.com/" 
+                    href="https://github.com/kai-lucky72" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="w-12 h-12 rounded-xl bg-black/50 hover:bg-primary/20 border border-gray-800 hover:border-primary/50 flex items-center justify-center transition-all shadow-lg hover:shadow-primary/5" 

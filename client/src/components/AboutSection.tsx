@@ -24,10 +24,10 @@ const AboutSection: React.FC<AboutSectionProps> = ({ scrollToSection }) => {
               <span className="bg-gradient-to-r from-primary to-[#0EA5E9] bg-clip-text text-transparent">Excellence</span>
             </h2>
             <p className="text-gray-300 mb-6 text-lg">
-              Senior software engineer and system architect with 8+ years of experience building high-performance applications and scalable infrastructures for enterprise clients. Specializing in modern web technologies, distributed systems, and cloud architecture.
+              Machine learning specialist and software engineer with 3+ years of experience in AI development. Participated in the prestigious Informatics of AI of Africa program, where I developed innovative ML solutions for real-world challenges.
             </p>
             <p className="text-gray-300 mb-8 text-lg">
-              Passionate about creating elegant solutions to complex technical challenges. My approach combines cutting-edge technologies with sound architectural principles to deliver robust, maintainable, and efficient software systems.
+              Passionate about combining cutting-edge AI technologies with sound software engineering practices to create intelligent systems. My expertise spans machine learning, data analysis, and full-stack development for creating powerful technical solutions.
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 mb-10">
@@ -40,12 +40,12 @@ const AboutSection: React.FC<AboutSectionProps> = ({ scrollToSection }) => {
                 </h3>
                 <ul className="space-y-4">
                   <li className="text-gray-400">
-                    <p className="text-white font-medium">MS in Computer Science</p>
-                    <p>Stanford University, 2017</p>
+                    <p className="text-white font-medium">AI & Machine Learning Certification</p>
+                    <p>Informatics of AI of Africa, 2022</p>
                   </li>
                   <li className="text-gray-400">
-                    <p className="text-white font-medium">BS in Software Engineering</p>
-                    <p>MIT, 2015</p>
+                    <p className="text-white font-medium">BS in Computer Science</p>
+                    <p>University of Rwanda, 2020</p>
                   </li>
                 </ul>
               </div>
@@ -59,12 +59,12 @@ const AboutSection: React.FC<AboutSectionProps> = ({ scrollToSection }) => {
                 </h3>
                 <ul className="space-y-4">
                   <li className="text-gray-400">
-                    <p className="text-white font-medium">Lead System Architect</p>
-                    <p>TechForge Solutions, 2020-Present</p>
+                    <p className="text-white font-medium">AI Research Engineer</p>
+                    <p>Informatics of AI of Africa, 2022-Present</p>
                   </li>
                   <li className="text-gray-400">
-                    <p className="text-white font-medium">Senior Software Engineer</p>
-                    <p>InnovateX Labs, 2017-2020</p>
+                    <p className="text-white font-medium">ML Software Developer</p>
+                    <p>Tech Solutions Lab, 2020-2022</p>
                   </li>
                 </ul>
               </div>
@@ -96,10 +96,11 @@ const AboutSection: React.FC<AboutSectionProps> = ({ scrollToSection }) => {
             viewport={{ once: true, margin: "-100px" }}
           >
             <div className="relative w-full h-[520px] overflow-hidden rounded-2xl border-2 border-gray-800 shadow-2xl">
-              {/* This is where the user's image will go */}
-              <div className="w-full h-full bg-gradient-to-br from-gray-900 to-black flex items-center justify-center">
-                <p className="text-white text-center px-8">Your personal image will be placed here</p>
-              </div>
+              <img 
+                src="/images/profile.png" 
+                alt="Lucky Kagabo Profile" 
+                className="w-full h-full object-cover bg-gradient-to-br from-gray-900 to-black"
+              />
               <div className="absolute inset-0 border-[20px] border-black/40 pointer-events-none"></div>
             </div>
             
@@ -122,15 +123,15 @@ const AboutSection: React.FC<AboutSectionProps> = ({ scrollToSection }) => {
               <ul className="space-y-3">
                 <li className="flex items-start gap-3 text-gray-300">
                   <i className="fas fa-check-circle text-primary mt-1"></i>
-                  <span>Tech Leadership Award 2023</span>
+                  <span>Africa AI Hackathon Winner 2023</span>
                 </li>
                 <li className="flex items-start gap-3 text-gray-300">
                   <i className="fas fa-check-circle text-primary mt-1"></i>
-                  <span>5 Patents in Software Systems</span>
+                  <span>3 ML Research Publications</span>
                 </li>
                 <li className="flex items-start gap-3 text-gray-300">
                   <i className="fas fa-check-circle text-primary mt-1"></i>
-                  <span>Top 1% Stack Overflow Contributor</span>
+                  <span>Open Source ML Contributor</span>
                 </li>
               </ul>
             </motion.div>

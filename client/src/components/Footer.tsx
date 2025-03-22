@@ -30,8 +30,8 @@ const Footer: React.FC<FooterProps> = ({ scrollToSection }) => {
                 handleNavLinkClick('home');
               }}
             >
-              <span className="bg-gradient-to-r from-primary to-[#0EA5E9] bg-clip-text text-transparent">Dev</span>
-              <span className="text-white">Portfolio</span>
+              <span className="bg-gradient-to-r from-primary to-[#0EA5E9] bg-clip-text text-transparent">Lucky</span>
+              <span className="text-white">Kagabo</span>
             </a>
             <p className="text-gray-400 mt-4 leading-relaxed">
               Building elegant, high-performance solutions with cutting-edge technologies.
@@ -39,7 +39,7 @@ const Footer: React.FC<FooterProps> = ({ scrollToSection }) => {
             
             <div className="flex gap-4 mt-6">
               <a 
-                href="https://github.com/" 
+                href="https://github.com/kai-lucky72" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="w-10 h-10 rounded-lg bg-black/50 hover:bg-primary/20 border border-gray-800 hover:border-primary/50 flex items-center justify-center transition-all shadow-lg hover:shadow-primary/5" 
