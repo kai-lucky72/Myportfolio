@@ -5,7 +5,7 @@ export const userInfo = {
   name: "Lucky Kagabo",
   email: "kagabolucky72@gmail.com",
   github: "https://github.com/kai-lucky72",
-  profileImage: "/images/profile.png"
+  profileImage: "/images/profile-image.png"
 };
 
 // Projects data

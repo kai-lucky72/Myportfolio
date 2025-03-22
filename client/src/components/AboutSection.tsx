@@ -97,9 +97,9 @@ const AboutSection: React.FC<AboutSectionProps> = ({ scrollToSection }) => {
           >
             <div className="relative w-full h-[520px] overflow-hidden rounded-2xl border-2 border-gray-800 shadow-2xl">
               <img 
-                src="/images/profile.png" 
+                src="/images/profile-image.png" 
                 alt="Lucky Kagabo Profile" 
-                className="w-full h-full object-cover bg-gradient-to-br from-gray-900 to-black"
+                className="w-full h-full object-contain bg-gradient-to-br from-gray-900 to-black"
               />
               <div className="absolute inset-0 border-[20px] border-black/40 pointer-events-none"></div>
             </div>
