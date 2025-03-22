@@ -1,6 +1,7 @@
 import { createRoot } from "react-dom/client";
 import App from "./App";
 import "./index.css";
+import { ThemeProvider } from "./contexts/ThemeContext";
 
 // Add custom styles for font families and other global styles
 const style = document.createElement('style');
