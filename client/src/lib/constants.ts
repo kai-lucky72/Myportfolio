@@ -87,9 +87,10 @@ export const aiSkills: Skill[] = [
 
 // Software Development Skills
 export const devSkills: Skill[] = [
-  { name: 'JavaScript/TypeScript', percentage: 90 },
-  { name: 'Python', percentage: 92 },
-  { name: 'React/Next.js', percentage: 85 },
+  { name: 'Python', percentage: 95 },
+  { name: 'Java', percentage: 92 },
+  { name: 'JavaScript/TypeScript', percentage: 85 },
+  { name: 'React/Next.js', percentage: 80 },
   { name: 'Node.js/Express', percentage: 87 },
   { name: 'SQL/NoSQL Databases', percentage: 83 },
   { name: 'Git/GitHub', percentage: 90 }
