@@ -23,7 +23,7 @@ const SkillsSection = () => {
             A showcase of my professional skills in system architecture, software development, and technical leadership.
           </p>
         </motion.div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 mb-20">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -38,7 +38,7 @@ const SkillsSection = () => {
               </span>
               System Architecture
             </h3>
-            
+
             <div className="space-y-6">
               {aiSkills.map((skill: Skill, index: number) => (
                 <motion.div 
@@ -53,7 +53,7 @@ const SkillsSection = () => {
               ))}
             </div>
           </motion.div>
-          
+
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -67,7 +67,7 @@ const SkillsSection = () => {
               </span>
               Software Development
             </h3>
-            
+
             <div className="space-y-6">
               {devSkills.map((skill: Skill, index: number) => (
                 <motion.div 
@@ -83,9 +83,9 @@ const SkillsSection = () => {
             </div>
           </motion.div>
         </div>
-        
+
         <h3 className="text-2xl font-heading font-bold text-white mb-8 text-center">Core Competencies</h3>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {coreCompetencies.map((competency: CoreCompetency, index: number) => (
             <motion.div 

@@ -24,8 +24,8 @@ const ProjectsSection = () => {
             A showcase of my high-performance applications, complex systems, and technical solutions that solve real-world problems.
           </p>
         </motion.div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"> {/* Modified to be responsive */}
           {projectsData.map((project: Project, index: number) => (
             <motion.div
               key={project.id}
@@ -38,7 +38,7 @@ const ProjectsSection = () => {
             </motion.div>
           ))}
         </div>
-        
+
         <motion.div 
           className="text-center mt-16"
           initial={{ opacity: 0 }}

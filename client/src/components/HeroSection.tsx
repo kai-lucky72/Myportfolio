@@ -8,7 +8,7 @@ interface HeroSectionProps {
 const HeroSection: React.FC<HeroSectionProps> = ({ scrollToSection }) => {
   return (
     <section id="home" className="min-h-screen relative flex items-center hero-gradient border-b border-white/5">
-      <div className="container mx-auto px-4 py-20 pt-32">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20 pt-24 sm:pt-32">
         <div className="flex flex-col md:flex-row gap-12 items-center">
           <motion.div 
             className="flex flex-col gap-6 text-center md:text-left flex-1"

@@ -10,30 +10,30 @@
   body {
     @apply font-sans antialiased bg-background text-foreground;
   }
-  
+
   /* Dark mode (default) */
   :root {
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
-    
+
     --card: 0 0% 3.9%;
     --card-foreground: 0 0% 98%;
- 
+
     --popover: 0 0% 3.9%;
     --popover-foreground: 0 0% 98%;
- 
+
     --primary: 243 75% 59%;
     --primary-foreground: 0 0% 98%;
- 
+
     --secondary: 240 4% 16%;
     --secondary-foreground: 0 0% 98%;
- 
+
     --muted: 0 0% 14.9%;
     --muted-foreground: 0 0% 63.9%;
- 
+
     --accent: 240 4% 16%;
     --accent-foreground: 0 0% 98%;
- 
+
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
 
@@ -46,25 +46,25 @@
   .light-mode {
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
-    
+
     --card: 0 0% 98%;
     --card-foreground: 0 0% 3.9%;
- 
+
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 3.9%;
- 
+
     --primary: 243 75% 59%;
     --primary-foreground: 0 0% 98%;
- 
+
     --secondary: 240 3.7% 93.9%;
     --secondary-foreground: 240 5.9% 10%;
- 
+
     --muted: 240 4.8% 95.9%;
     --muted-foreground: 240 3.8% 46.1%;
- 
+
     --accent: 240 4.8% 95.9%;
     --accent-foreground: 240 5.9% 10%;
- 
+
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
@@ -81,7 +81,7 @@
     position: relative;
     overflow: hidden;
   }
-  
+
   .hero-gradient::before {
     content: "";
     position: absolute;
@@ -92,16 +92,16 @@
     background: radial-gradient(circle at 50% 0%, rgba(8, 109, 233, 0.15) 0%, transparent 50%);
     z-index: 0;
   }
-  
+
   /* Hero gradient - Light mode */
   .light-mode .hero-gradient {
     background: linear-gradient(45deg, rgba(240, 245, 255, 1) 0%, rgba(230, 237, 255, 1) 100%);
   }
-  
+
   .light-mode .hero-gradient::before {
     background: radial-gradient(circle at 50% 0%, rgba(8, 109, 233, 0.10) 0%, transparent 50%);
   }
-  
+
   /* Animation classes */
   .animate-spin-slow {
     animation: spin 20s linear infinite;
@@ -115,43 +115,61 @@
       transform: rotate(360deg);
     }
   }
-  
+
   /* Project card styles */
   .project-card {
     transition: all 0.3s ease-in-out;
     transform: translateY(0);
   }
-  
+
   .project-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 20px 30px -10px rgba(2, 6, 23, 0.5), 0 0 15px 0 rgba(8, 109, 233, 0.2);
   }
-  
+
   .light-mode .project-card:hover {
     box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.1), 0 0 15px 0 rgba(8, 109, 233, 0.15);
   }
-  
+
   /* Tech badge styles */
   .tech-badge {
     background: rgba(8, 109, 233, 0.15);
     border: 1px solid rgba(8, 109, 233, 0.3);
   }
-  
+
   .light-mode .tech-badge {
     background: rgba(8, 109, 233, 0.1);
     border: 1px solid rgba(8, 109, 233, 0.2);
   }
-  
+
   /* Theme specific utility classes */
   .theme-border-color {
     @apply border-gray-800 light-mode:border-gray-200;
   }
-  
+
   .theme-bg {
     @apply bg-black/80 light-mode:bg-white/90;
   }
-  
+
   .theme-card-bg {
     @apply bg-black/80 backdrop-blur-lg light-mode:bg-white/90 light-mode:backdrop-blur-lg;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+
+  @media (max-width: 640px) {
+    h1 {
+      font-size: 2rem;
+      line-height: 1.2;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    .container {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
   }
 }
