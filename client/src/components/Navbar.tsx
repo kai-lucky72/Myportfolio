@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'wouter';
 import { Button } from '@/components/ui/button';
-import { Menu } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 interface NavbarProps {
   scrollToSection: (id: string) => void;
@@ -32,20 +32,22 @@ const Navbar: React.FC<NavbarProps> = ({ scrollToSection }) => {
   };
 
   const navLinks = [
-    { id: 'home', label: 'Home' },
-    { id: 'projects', label: 'Projects' },
-    { id: 'skills', label: 'Skills' },
-    { id: 'about', label: 'About' },
-    { id: 'contact', label: 'Contact' },
+    { id: 'home', label: 'HOME' },
+    { id: 'projects', label: 'PROJECTS' },
+    { id: 'skills', label: 'SKILLS' },
+    { id: 'about', label: 'ABOUT' },
+    { id: 'contact', label: 'CONTACT' },
   ];
 
   return (
     <header 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-4 py-3 ${
-        isScrolled ? 'scrolled' : ''
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled 
+          ? 'bg-black/80 backdrop-blur-lg py-3 shadow-lg' 
+          : 'bg-transparent py-5'
       }`}
     >
-      <nav className="max-w-7xl mx-auto flex justify-between items-center">
+      <nav className="max-w-7xl mx-auto flex justify-between items-center px-4">
         <a 
           href="#home" 
           className="text-xl font-heading font-bold text-white flex items-center gap-2"
@@ -54,15 +56,16 @@ const Navbar: React.FC<NavbarProps> = ({ scrollToSection }) => {
             handleNavLinkClick('home');
           }}
         >
-          <span className="text-[#8B5CF6]">AI</span>Portfolio
+          <span className="text-primary text-2xl">DEV</span>
+          <span className="bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent font-bold">PORTFOLIO</span>
         </a>
         
-        <div className="hidden md:flex items-center space-x-8">
+        <div className="hidden md:flex items-center space-x-10">
           {navLinks.map(link => (
             <a 
               key={link.id}
               href={`#${link.id}`} 
-              className="text-white hover:text-[#8B5CF6] transition-colors"
+              className="text-sm font-semibold text-gray-300 hover:text-primary transition-colors"
               onClick={(e) => {
                 e.preventDefault();
                 handleNavLinkClick(link.id);
@@ -74,10 +77,10 @@ const Navbar: React.FC<NavbarProps> = ({ scrollToSection }) => {
         </div>
         
         <Button 
-          className="hidden md:inline-flex bg-primary hover:bg-primary/90 text-white px-5 py-2 rounded-lg font-medium shadow-lg shadow-primary/20 transition-all"
+          className="hidden md:inline-flex bg-primary hover:bg-primary/90 text-white px-5 py-6 rounded-lg font-medium shadow-lg shadow-primary/20 transition-all text-sm"
           onClick={() => handleNavLinkClick('contact')}
         >
-          Get in Touch
+          GET IN TOUCH
         </Button>
         
         <Button 
@@ -85,18 +88,22 @@ const Navbar: React.FC<NavbarProps> = ({ scrollToSection }) => {
           className="md:hidden text-white p-1" 
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
-          <Menu className="h-6 w-6" />
+          {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </Button>
       </nav>
       
       {/* Mobile menu */}
-      <div className={`${isMobileMenuOpen ? 'block' : 'hidden'} absolute top-16 left-0 right-0 bg-[#111827] bg-opacity-95 nav-blur border-b border-gray-700 py-4 px-4 md:hidden animate-in fade-in`}>
-        <div className="flex flex-col space-y-4">
+      <div 
+        className={`${
+          isMobileMenuOpen ? 'flex' : 'hidden'
+        } fixed inset-0 top-16 bg-black/95 backdrop-blur-lg flex-col justify-center items-center z-40 md:hidden transition-all duration-300 ease-in-out`}
+      >
+        <div className="flex flex-col space-y-8 items-center">
           {navLinks.map(link => (
             <a 
               key={link.id}
               href={`#${link.id}`} 
-              className="text-white hover:text-[#8B5CF6] transition-colors py-2"
+              className="text-xl font-bold text-white hover:text-primary transition-colors"
               onClick={(e) => {
                 e.preventDefault();
                 handleNavLinkClick(link.id);
@@ -106,11 +113,23 @@ const Navbar: React.FC<NavbarProps> = ({ scrollToSection }) => {
             </a>
           ))}
           <Button 
-            className="bg-primary hover:bg-primary/90 text-white px-5 py-2 rounded-lg font-medium shadow-lg shadow-primary/20 transition-all text-center mt-2"
+            className="bg-primary hover:bg-primary/90 text-white px-6 py-5 rounded-lg font-medium shadow-lg shadow-primary/20 transition-all text-center mt-6 w-40"
             onClick={() => handleNavLinkClick('contact')}
           >
-            Get in Touch
+            GET IN TOUCH
           </Button>
+        </div>
+        
+        <div className="absolute bottom-20 flex gap-8 text-gray-400 text-2xl">
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+            <i className="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+            <i className="fab fa-linkedin"></i>
+          </a>
+          <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+            <i className="fab fa-twitter"></i>
+          </a>
         </div>
       </div>
     </header>
