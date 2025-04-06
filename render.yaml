@@ -6,8 +6,5 @@ services:
     repo: https://github.com/kai-lucky72/Myportfolio # Replace with your repo
     branch: main
     buildCommand: npm install && npm run build
-    publishPath: ./build
-    environmentVariables:
-      - key: NODE_VERSION
-        value: 18.x  # Matches React 18 requirements
+
 
