@@ -1,10 +1,11 @@
-# render.yaml
 services:
   - type: web
-    name: myportfolio-frontend
-    env: static
-    repo: https://github.com/kai-lucky72/Myportfolio # Replace with your repo
+    name: lucky-portfolio
+    env: node
+    plan: free
+    buildCommand: npm install --include=dev && npm run build
+    startCommand: npm start
     branch: main
-    buildCommand: npm install && npm run build
-
-
+    envVars:
+      - key: NODE_ENV
+        value: production
