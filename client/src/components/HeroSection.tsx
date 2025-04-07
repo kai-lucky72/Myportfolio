@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
+import { userInfo } from '@/lib/constants';
 
 interface HeroSectionProps {
   scrollToSection: (id: string) => void;
@@ -69,10 +70,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToSection }) => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
           >
-            {/* This is a placeholder for user's image. User will provide their own image later */}
+            {/* Profile image */}
             <div className="h-[320px] w-[320px] rounded-full bg-gradient-to-br from-primary/20 to-primary/50 p-1">
               <div className="h-full w-full rounded-full flex items-center justify-center bg-black/80 overflow-hidden">
-                <p className="text-white text-center px-8">Your image will be placed here</p>
+                <img 
+                  src={userInfo.profileImage} 
+                  alt={`${userInfo.name} profile image`} 
+                  className="h-full w-full object-cover"
+                />
               </div>
             </div>
             
@@ -84,7 +89,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToSection }) => {
         </div>
         
         <div className="absolute flex bottom-10 right-10 gap-6 text-gray-400 text-xl hidden md:flex">
-          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors" aria-label="GitHub">
+          <a href={userInfo.github} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors" aria-label="GitHub">
             <i className="fab fa-github"></i>
           </a>
           <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors" aria-label="LinkedIn">
