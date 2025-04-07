@@ -67,10 +67,6 @@ const Navbar: React.FC<NavbarProps> = ({ scrollToSection }) => {
               key={link.id}
               href={`#${link.id}`} 
               className="text-sm font-semibold text-gray-300 hover:text-primary transition-colors"
-              onClick={(e) => {
-                e.preventDefault();
-                handleNavLinkClick(link.id);
-              }}
             >
               {link.label}
             </a>
@@ -79,12 +75,12 @@ const Navbar: React.FC<NavbarProps> = ({ scrollToSection }) => {
         
         <div className="hidden md:flex items-center gap-4">
           <ThemeToggle />
-          <Button 
-            className="bg-primary hover:bg-primary/90 text-white px-5 py-6 rounded-lg font-medium shadow-lg shadow-primary/20 transition-all text-sm"
-            onClick={() => handleNavLinkClick('contact')}
+          <a 
+            href="#contact"
+            className="bg-primary hover:bg-primary/90 text-white px-5 py-6 rounded-lg font-medium shadow-lg shadow-primary/20 transition-all text-sm inline-flex items-center justify-center no-underline"
           >
             GET IN TOUCH
-          </Button>
+          </a>
         </div>
         
         <Button 
@@ -108,22 +104,19 @@ const Navbar: React.FC<NavbarProps> = ({ scrollToSection }) => {
               key={link.id}
               href={`#${link.id}`} 
               className="text-xl font-bold text-white hover:text-primary transition-colors"
-              onClick={(e) => {
-                e.preventDefault();
-                handleNavLinkClick(link.id);
-              }}
+              onClick={() => setIsMobileMenuOpen(false)}
             >
               {link.label}
             </a>
           ))}
           <div className="flex flex-col items-center gap-5">
             <ThemeToggle className="mt-2" />
-            <Button 
-              className="bg-primary hover:bg-primary/90 text-white px-6 py-5 rounded-lg font-medium shadow-lg shadow-primary/20 transition-all text-center w-40"
-              onClick={() => handleNavLinkClick('contact')}
+            <a 
+              href="#contact"
+              className="bg-primary hover:bg-primary/90 text-white px-6 py-5 rounded-lg font-medium shadow-lg shadow-primary/20 transition-all text-center w-40 inline-flex items-center justify-center no-underline"
             >
               GET IN TOUCH
-            </Button>
+            </a>
           </div>
         </div>
         

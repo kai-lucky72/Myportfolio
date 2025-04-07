@@ -29,25 +29,18 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToSection }) => {
               Machine learning specialist and backend developer with expertise in AI development, cyber security, and ethical hacking. Currently working at Prime Life Insurance.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mt-4">
-              <Button 
-                className="bg-primary hover:bg-primary/90 text-white px-6 py-6 rounded-lg font-medium shadow-lg shadow-primary/20 transition-all flex items-center justify-center gap-2 text-base"
-                onClick={() => {
-                  console.log("Explore button clicked");
-                  scrollToSection('projects');
-                }}
+              <a 
+                href="#projects"
+                className="bg-primary hover:bg-primary/90 text-white px-6 py-6 rounded-lg font-medium shadow-lg shadow-primary/20 transition-all flex items-center justify-center gap-2 text-base no-underline"
               >
                 EXPLORE MY WORK →
-              </Button>
-              <Button 
-                variant="outline" 
-                className="bg-transparent text-white border border-white/20 hover:border-white/50 px-6 py-6 rounded-lg font-medium transition-all flex items-center justify-center gap-2 text-base"
-                onClick={() => {
-                  console.log("Contact button clicked");
-                  scrollToSection('contact');
-                }}
+              </a>
+              <a 
+                href="#contact"
+                className="bg-transparent text-white border border-white/20 hover:border-white/50 px-6 py-6 rounded-lg font-medium transition-all flex items-center justify-center gap-2 text-base no-underline"
               >
                 ✉ GET IN TOUCH
-              </Button>
+              </a>
             </div>
             
             <motion.div 
@@ -111,8 +104,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToSection }) => {
         </div>
       </div>
       
-      <motion.div 
-        className="absolute bottom-10 left-1/2 text-gray-400 text-sm flex flex-col items-center"
+      <motion.a 
+        href="#projects"
+        className="absolute bottom-10 left-1/2 text-gray-400 text-sm flex flex-col items-center no-underline hover:text-primary cursor-pointer"
         style={{ transform: 'translateX(-50%)' }}
         animate={{ 
           y: [0, -10, 0],
@@ -124,7 +118,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToSection }) => {
       >
         <span>Scroll down</span>
         <i className="fas fa-chevron-down mt-2"></i>
-      </motion.div>
+      </motion.a>
     </section>
   );
 };
