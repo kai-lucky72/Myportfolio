@@ -78,11 +78,10 @@ export const projectsData: Project[] = [
 // Technical Skills
 export const aiSkills: Skill[] = [
   { name: 'Machine Learning', percentage: 88 },
-  { name: 'Natural Language Processing', percentage: 85 },
-  { name: 'Computer Vision', percentage: 80 },
+  { name: 'Deep Learning', percentage: 80 },
   { name: 'Data Analysis', percentage: 92 },
-  { name: 'TensorFlow/PyTorch', percentage: 83 },
-  { name: 'Predictive Modeling', percentage: 87 }
+  { name: 'Ethical Hacking/Cyber Security', percentage: 85 },
+  { name: 'Backend Development', percentage: 90 }
 ];
 
 // Software Development Skills
@@ -106,16 +105,16 @@ export const coreCompetencies: CoreCompetency[] = [
     textColor: 'text-primary'
   },
   {
-    title: 'Full-Stack Development',
-    description: 'Building end-to-end applications with modern frameworks, focusing on performance, security, and exceptional user experience.',
-    icon: 'fas fa-code',
+    title: 'Cyber Security',
+    description: 'Implementing robust security systems through ethical hacking and penetration testing to identify and fix vulnerabilities in applications.',
+    icon: 'fas fa-shield-alt',
     bgColor: 'bg-[#0EA5E9]/20',
     textColor: 'text-[#0EA5E9]'
   },
   {
-    title: 'Problem Solving',
-    description: 'Creating elegant solutions to complex challenges using analytical thinking and innovative approaches to technical problems.',
-    icon: 'fas fa-lightbulb',
+    title: 'Full-Stack Development',
+    description: 'Building end-to-end applications with modern frameworks, focusing on performance, security, and exceptional user experience.',
+    icon: 'fas fa-code',
     bgColor: 'bg-[#8B5CF6]/20',
     textColor: 'text-[#8B5CF6]'
   }
