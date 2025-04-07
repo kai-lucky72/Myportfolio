@@ -20,13 +20,13 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToSection }) => {
           >
             <p className="text-primary font-medium inline-flex gap-2 items-center mx-auto md:mx-0">
               <span className="h-px w-6 bg-primary"></span>
-              FULL-STACK ENGINEER & SYSTEM ARCHITECT
+              AI ENGINEER & CYBER SECURITY EXPERT
             </p>
             <h1 className="text-4xl md:text-6xl font-heading font-bold text-white leading-tight">
-              Crafting <span className="bg-gradient-to-r from-primary to-[#0EA5E9] bg-clip-text text-transparent">powerful</span> digital<br className="hidden md:block"/> experiences
+              Creating <span className="bg-gradient-to-r from-primary to-[#0EA5E9] bg-clip-text text-transparent">intelligent</span> & secure<br className="hidden md:block"/> solutions
             </h1>
             <p className="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto md:mx-0">
-              Senior software engineer with expertise in high-performance systems, modern web applications, and technical leadership.
+              Machine learning specialist and backend developer with expertise in AI development, cyber security, and ethical hacking. Currently working at Prime Life Insurance.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mt-4">
               <Button 

@@ -48,7 +48,7 @@ const Footer: React.FC<FooterProps> = ({ scrollToSection }) => {
                 <i className="fab fa-github text-white text-lg hover:text-primary transition-colors"></i>
               </a>
               <a 
-                href="https://linkedin.com/" 
+                href="https://www.linkedin.com/in/kagaboirenelucky" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="w-10 h-10 rounded-lg bg-black/50 hover:bg-[#0EA5E9]/20 border border-gray-800 hover:border-[#0EA5E9]/50 flex items-center justify-center transition-all shadow-lg hover:shadow-[#0EA5E9]/5" 
@@ -57,13 +57,22 @@ const Footer: React.FC<FooterProps> = ({ scrollToSection }) => {
                 <i className="fab fa-linkedin-in text-white text-lg hover:text-[#0EA5E9] transition-colors"></i>
               </a>
               <a 
-                href="https://twitter.com/" 
+                href="https://x.com/K_AI_Lucky" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="w-10 h-10 rounded-lg bg-black/50 hover:bg-[#8B5CF6]/20 border border-gray-800 hover:border-[#8B5CF6]/50 flex items-center justify-center transition-all shadow-lg hover:shadow-[#8B5CF6]/5" 
                 aria-label="Twitter"
               >
                 <i className="fab fa-twitter text-white text-lg hover:text-[#8B5CF6] transition-colors"></i>
+              </a>
+              <a 
+                href="https://medium.com/@kagabolucky72" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="w-10 h-10 rounded-lg bg-black/50 hover:bg-gray-800 border border-gray-800 flex items-center justify-center transition-all shadow-lg" 
+                aria-label="Medium"
+              >
+                <i className="fab fa-medium-m text-white text-lg hover:text-gray-300 transition-colors"></i>
               </a>
             </div>
           </div>
@@ -174,19 +183,19 @@ const Footer: React.FC<FooterProps> = ({ scrollToSection }) => {
             <ul className="space-y-3">
               <li className="flex items-center gap-3 text-gray-400">
                 <i className="fas fa-envelope text-primary"></i>
-                <a href="mailto:contact@techportfolio.com" className="hover:text-primary transition-colors">
-                  contact@techportfolio.com
+                <a href="mailto:kagabolucky72@gmail.com" className="hover:text-primary transition-colors">
+                  kagabolucky72@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-3 text-gray-400">
                 <i className="fas fa-phone text-[#0EA5E9]"></i>
-                <a href="tel:+1555-123-4567" className="hover:text-[#0EA5E9] transition-colors">
-                  +1 (555) 123-4567
+                <a href="tel:+250723374650" className="hover:text-[#0EA5E9] transition-colors">
+                  +250 723 374 650
                 </a>
               </li>
               <li className="flex items-center gap-3 text-gray-400">
                 <i className="fas fa-map-marker-alt text-[#8B5CF6]"></i>
-                <span>San Francisco, California</span>
+                <span>Kigali, Rwanda</span>
               </li>
             </ul>
           </div>
@@ -194,7 +203,7 @@ const Footer: React.FC<FooterProps> = ({ scrollToSection }) => {
         
         <div className="mt-12 pt-8 border-t border-gray-800/50 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-500 text-sm">
-            &copy; {currentYear} DevPortfolio. All rights reserved.
+            &copy; {currentYear} Lucky Kagabo. All rights reserved.
           </p>
           
           <p className="text-gray-600 text-sm mt-3 md:mt-0">
