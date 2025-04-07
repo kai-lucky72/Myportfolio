@@ -93,10 +93,13 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToSection }) => {
           <a href={userInfo.github} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors" aria-label="GitHub">
             <i className="fab fa-github"></i>
           </a>
-          <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors" aria-label="LinkedIn">
+          <a href={userInfo.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors" aria-label="LinkedIn">
             <i className="fab fa-linkedin"></i>
           </a>
-          <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors" aria-label="Twitter">
+          <a href={userInfo.medium} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors" aria-label="Medium">
+            <i className="fab fa-medium"></i>
+          </a>
+          <a href={userInfo.twitter} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors" aria-label="X (Twitter)">
             <i className="fab fa-twitter"></i>
           </a>
         </div>

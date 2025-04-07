@@ -6,6 +6,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { useToast } from '@/hooks/use-toast';
 import { apiRequest } from '@/lib/queryClient';
+import { userInfo } from '@/lib/constants';
 
 const ContactSection = () => {
   const { toast } = useToast();
@@ -102,8 +103,8 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="text-white font-medium mb-1 text-lg">Email</h4>
-                    <a href="mailto:kagabolucky72@gmail.com" className="text-gray-400 hover:text-primary transition-colors">
-                      kagabolucky72@gmail.com
+                    <a href={`mailto:${userInfo.email}`} className="text-gray-400 hover:text-primary transition-colors">
+                      {userInfo.email}
                     </a>
                   </div>
                 </div>
@@ -114,8 +115,8 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="text-white font-medium mb-1 text-lg">Phone</h4>
-                    <a href="tel:+1555-123-4567" className="text-gray-400 hover:text-[#0EA5E9] transition-colors">
-                      +1 (555) 123-4567
+                    <a href={`tel:${userInfo.phone}`} className="text-gray-400 hover:text-[#0EA5E9] transition-colors">
+                      {userInfo.phone}
                     </a>
                   </div>
                 </div>
@@ -127,7 +128,7 @@ const ContactSection = () => {
                   <div>
                     <h4 className="text-white font-medium mb-1 text-lg">Location</h4>
                     <p className="text-gray-400">
-                      San Francisco, California
+                      {userInfo.location}
                     </p>
                   </div>
                 </div>
@@ -137,7 +138,7 @@ const ContactSection = () => {
                 <h4 className="text-white font-bold mb-4 text-lg">Connect on Social Media</h4>
                 <div className="flex gap-4">
                   <a 
-                    href="https://github.com/kai-lucky72" 
+                    href={userInfo.github} 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="w-12 h-12 rounded-xl bg-black/50 hover:bg-primary/20 border border-gray-800 hover:border-primary/50 flex items-center justify-center transition-all shadow-lg hover:shadow-primary/5" 
@@ -146,7 +147,7 @@ const ContactSection = () => {
                     <i className="fab fa-github text-white text-xl hover:text-primary transition-colors"></i>
                   </a>
                   <a 
-                    href="https://linkedin.com/" 
+                    href={userInfo.linkedin} 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="w-12 h-12 rounded-xl bg-black/50 hover:bg-[#0EA5E9]/20 border border-gray-800 hover:border-[#0EA5E9]/50 flex items-center justify-center transition-all shadow-lg hover:shadow-[#0EA5E9]/5" 
@@ -155,16 +156,16 @@ const ContactSection = () => {
                     <i className="fab fa-linkedin-in text-white text-xl hover:text-[#0EA5E9] transition-colors"></i>
                   </a>
                   <a 
-                    href="https://twitter.com/" 
+                    href={userInfo.twitter} 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="w-12 h-12 rounded-xl bg-black/50 hover:bg-[#8B5CF6]/20 border border-gray-800 hover:border-[#8B5CF6]/50 flex items-center justify-center transition-all shadow-lg hover:shadow-[#8B5CF6]/5" 
-                    aria-label="Twitter"
+                    aria-label="X (Twitter)"
                   >
                     <i className="fab fa-twitter text-white text-xl hover:text-[#8B5CF6] transition-colors"></i>
                   </a>
                   <a 
-                    href="https://medium.com/" 
+                    href={userInfo.medium} 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="w-12 h-12 rounded-xl bg-black/50 hover:bg-gray-800 border border-gray-800 flex items-center justify-center transition-all shadow-lg" 

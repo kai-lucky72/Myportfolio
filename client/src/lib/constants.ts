@@ -8,6 +8,9 @@ export const userInfo = {
   location: "Kigali, Rwanda",
   education: "Year 2 - Rwanda Coding Academy, Nyabihu",
   github: "https://github.com/kai-lucky72",
+  linkedin: "https://www.linkedin.com/in/kagaboirenelucky",
+  medium: "https://medium.com/@kagabolucky72",
+  twitter: "https://x.com/K_AI_Lucky",
   profileImage: "/images/profile.png"
 };
 
