@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import { userInfo } from '@/lib/constants';
+import ProfileImage from './ProfileImage';
 
 interface HeroSectionProps {
   scrollToSection: (id: string) => void;
@@ -74,8 +75,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToSection }) => {
             <div className="h-[320px] w-[320px] rounded-full bg-gradient-to-br from-primary/20 to-primary/50 p-1">
               <div className="h-full w-full rounded-full flex items-center justify-center bg-black/80 overflow-hidden">
                 <img 
-                  src={userInfo.profileImage} 
-                  alt={`${userInfo.name} profile image`} 
+                  src={ProfileImage.src} 
+                  alt={userInfo.name} 
                   className="h-full w-full object-cover"
                 />
               </div>

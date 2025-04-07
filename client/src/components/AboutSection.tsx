@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { userInfo } from '@/lib/constants';
+import ProfileImage from './ProfileImage';
 
 interface AboutSectionProps {
   scrollToSection: (id: string) => void;
@@ -98,8 +99,8 @@ const AboutSection: React.FC<AboutSectionProps> = ({ scrollToSection }) => {
           >
             <div className="relative w-full h-[520px] overflow-hidden rounded-2xl border-2 border-gray-800 shadow-2xl">
               <img 
-                src={userInfo.profileImage} 
-                alt={`${userInfo.name} Profile`} 
+                src={ProfileImage.src} 
+                alt={userInfo.name} 
                 className="w-full h-full object-contain bg-gradient-to-br from-gray-900 to-black"
               />
               <div className="absolute inset-0 border-[20px] border-black/40 pointer-events-none"></div>
