@@ -62,6 +62,8 @@ This project is set up to be deployed on Vercel. To deploy:
 2. Connect your GitHub repository to Vercel
 3. Deploy with default settings
 
+## You can access this portfolio here https://lucky-portfolio.onrender.com
+
 ## License
 
 This project is open source and available under the MIT License.
