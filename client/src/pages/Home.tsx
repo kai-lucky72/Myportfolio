@@ -11,17 +11,22 @@ import Footer from '@/components/Footer';
 const Home = () => {
   // Function to scroll to a specific section
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      const navbarHeight = 80; // Approximate navbar height
-      const yOffset = -navbarHeight;
-      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-      
-      window.scrollTo({
-        top: y,
-        behavior: 'smooth'
-      });
-    }
+    console.log("Scrolling to section:", id);
+    setTimeout(() => {
+      const element = document.getElementById(id);
+      if (element) {
+        const navbarHeight = 80; // Approximate navbar height
+        const yOffset = -navbarHeight;
+        const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
+        
+        window.scrollTo({
+          top: y,
+          behavior: 'smooth'
+        });
+      } else {
+        console.error(`Element with id ${id} not found`);
+      }
+    }, 100); // Small delay to ensure DOM is ready
   };
 
   return (

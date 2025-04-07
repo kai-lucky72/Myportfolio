@@ -31,16 +31,22 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToSection }) => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mt-4">
               <Button 
                 className="bg-primary hover:bg-primary/90 text-white px-6 py-6 rounded-lg font-medium shadow-lg shadow-primary/20 transition-all flex items-center justify-center gap-2 text-base"
-                onClick={() => scrollToSection('projects')}
+                onClick={() => {
+                  console.log("Explore button clicked");
+                  scrollToSection('projects');
+                }}
               >
-                EXPLORE MY WORK <i className="fas fa-arrow-right"></i>
+                EXPLORE MY WORK →
               </Button>
               <Button 
                 variant="outline" 
                 className="bg-transparent text-white border border-white/20 hover:border-white/50 px-6 py-6 rounded-lg font-medium transition-all flex items-center justify-center gap-2 text-base"
-                onClick={() => scrollToSection('contact')}
+                onClick={() => {
+                  console.log("Contact button clicked");
+                  scrollToSection('contact');
+                }}
               >
-                <i className="fas fa-envelope"></i> GET IN TOUCH
+                ✉ GET IN TOUCH
               </Button>
             </div>
             
