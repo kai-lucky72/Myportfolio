@@ -20,16 +20,16 @@ const AboutSection: React.FC<AboutSectionProps> = ({ scrollToSection }) => {
             transition={{ duration: 0.5 }}
             viewport={{ once: true, margin: "-100px" }}
           >
-            <p className="text-primary font-medium tracking-wider">MY BACKGROUND</p>
+            <p className="text-primary font-medium tracking-wider">ABOUT KAGABO IRENE LUCKY</p>
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mt-3 mb-8 flex flex-col gap-1">
               <span>Engineering</span>
               <span className="bg-gradient-to-r from-primary to-[#0EA5E9] bg-clip-text text-transparent">Excellence</span>
             </h2>
             <p className="text-gray-300 mb-6 text-lg">
-              Machine learning specialist and software engineer with experience in AI development since 2023. Participated in the prestigious Informatics of AI of Africa program (2024-2025), where I developed innovative ML solutions for real-world challenges. Currently developing backend systems at Prime Life Insurance.
+              Kagabo Irene Lucky is a machine learning specialist and software engineer with experience in AI development since 2023. Participated in the prestigious Informatics of AI of Africa program (2024-2025), where he developed innovative ML solutions for real-world challenges. Currently developing backend systems at Prime Life Insurance.
             </p>
             <p className="text-gray-300 mb-8 text-lg">
-              Passionate about combining cutting-edge AI technologies with sound software engineering practices to create intelligent systems. Winner of the Cyberlympics competition in cyber security, with strong expertise in backend development and ethical hacking. My skills span machine learning, data analysis, cyber security, and full-stack development for creating powerful technical solutions.
+              Kagabo Irene Lucky is passionate about combining cutting-edge AI technologies with sound software engineering practices to create intelligent systems. Winner of the Cyberlympics competition in cyber security, with strong expertise in backend development and ethical hacking. His skills span machine learning, data analysis, cyber security, and full-stack development for creating powerful technical solutions.
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 mb-10">

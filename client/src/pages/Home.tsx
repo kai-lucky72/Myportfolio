@@ -28,10 +28,10 @@ const Home = () => {
     <div className="min-h-screen">
       <Navbar scrollToSection={scrollToSection} />
       <HeroSection scrollToSection={scrollToSection} />
-      <ProjectsSection />
+      <ProjectsSection scrollToSection={scrollToSection} />
       <SkillsSection />
       <AboutSection scrollToSection={scrollToSection} />
-      <ContactSection />
+      <ContactSection scrollToSection={scrollToSection} />
       <Footer scrollToSection={scrollToSection} />
     </div>
   );

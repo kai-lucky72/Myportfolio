@@ -8,7 +8,11 @@ import { useToast } from '@/hooks/use-toast';
 import { apiRequest } from '@/lib/queryClient';
 import { userInfo } from '@/lib/constants';
 
-const ContactSection = () => {
+interface ContactSectionProps {
+  scrollToSection?: (id: string) => void;
+}
+
+const ContactSection: React.FC<ContactSectionProps> = ({ scrollToSection }) => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: '',
@@ -71,7 +75,7 @@ const ContactSection = () => {
             transition={{ duration: 0.5 }}
             viewport={{ once: true, margin: "-100px" }}
           >
-            <p className="text-primary font-medium tracking-wider">GET IN TOUCH</p>
+            <p className="text-primary font-medium tracking-wider">CONTACT KAGABO IRENE LUCKY</p>
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mt-3 flex flex-col md:flex-row items-center justify-center gap-3">
               <span>Ready to</span> 
               <span className="bg-gradient-to-r from-primary to-[#0EA5E9] bg-clip-text text-transparent">Collaborate?</span>

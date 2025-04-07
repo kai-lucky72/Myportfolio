@@ -3,7 +3,11 @@ import ProjectCard from './ProjectCard';
 import { projectsData } from '@/lib/constants';
 import { Project } from '@/types';
 
-const ProjectsSection = () => {
+interface ProjectsSectionProps {
+  scrollToSection?: (id: string) => void;
+}
+
+const ProjectsSection: React.FC<ProjectsSectionProps> = ({ scrollToSection }) => {
   return (
     <section id="projects" className="py-24 relative">
       <div className="absolute inset-0 bg-gradient-to-b from-black/0 via-primary/5 to-black/0 pointer-events-none"></div>
@@ -15,7 +19,7 @@ const ProjectsSection = () => {
           transition={{ duration: 0.5 }}
           viewport={{ once: true, margin: "-100px" }}
         >
-          <p className="text-primary font-medium tracking-wider">FEATURED PROJECTS</p>
+          <p className="text-primary font-medium tracking-wider">KAGABO IRENE LUCKY'S FEATURED PROJECTS</p>
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mt-3 flex flex-col md:flex-row items-center justify-center gap-3">
             <span>My</span> 
             <span className="bg-gradient-to-r from-primary to-[#0EA5E9] bg-clip-text text-transparent">Technical Portfolio</span>

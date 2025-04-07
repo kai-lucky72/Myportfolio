@@ -23,7 +23,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToSection }) => {
               AI ENGINEER & CYBER SECURITY EXPERT
             </p>
             <h1 className="text-4xl md:text-6xl font-heading font-bold text-white leading-tight">
-              Creating <span className="bg-gradient-to-r from-primary to-[#0EA5E9] bg-clip-text text-transparent">intelligent</span> & secure<br className="hidden md:block"/> solutions
+              Kagabo Irene Lucky: Creating <span className="bg-gradient-to-r from-primary to-[#0EA5E9] bg-clip-text text-transparent">intelligent</span> & secure<br className="hidden md:block"/> solutions
             </h1>
             <p className="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto md:mx-0">
               Machine learning specialist and backend developer with expertise in AI development, cyber security, and ethical hacking. Currently working at Prime Life Insurance.
@@ -51,16 +51,16 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToSection }) => {
               transition={{ delay: 0.4, duration: 0.6 }}
             >
               <div className="flex items-center gap-3">
-                <span className="text-4xl font-heading font-bold text-white">8+</span>
+                <span className="text-4xl font-heading font-bold text-white">3+</span>
                 <span className="text-gray-400">Years<br/>Experience</span>
               </div>
               <div className="flex items-center gap-3">
-                <span className="text-4xl font-heading font-bold text-white">40+</span>
+                <span className="text-4xl font-heading font-bold text-white">10+</span>
                 <span className="text-gray-400">Projects<br/>Delivered</span>
               </div>
               <div className="flex items-center gap-3">
-                <span className="text-4xl font-heading font-bold text-white">15+</span>
-                <span className="text-gray-400">Tech<br/>Stacks</span>
+                <span className="text-4xl font-heading font-bold text-white">5+</span>
+                <span className="text-gray-400">Programming<br/>Languages</span>
               </div>
             </motion.div>
           </motion.div>
