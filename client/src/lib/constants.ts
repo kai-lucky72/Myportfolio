@@ -6,7 +6,7 @@ export const userInfo = {
   email: "kagabolucky72@gmail.com",
   phone: "+250723374650",
   location: "Kigali, Rwanda",
-  education: "Year 2 - Rwanda Coding Academy, Nyabihu",
+  education: "Rwanda Coding Academy, 2023",
   github: "https://github.com/kai-lucky72",
   linkedin: "https://www.linkedin.com/in/kagaboirenelucky",
   medium: "https://medium.com/@kagabolucky72",
@@ -102,7 +102,7 @@ export const devSkills: Skill[] = [
 export const coreCompetencies: CoreCompetency[] = [
   {
     title: 'AI & Machine Learning',
-    description: 'Developing intelligent systems with 3+ years of experience in machine learning, participating in the Informatics of AI of Africa program.',
+    description: 'Developing intelligent systems with experience in machine learning since 2023, participating in the Informatics of AI of Africa program (2024-2025).',
     icon: 'fas fa-brain',
     bgColor: 'bg-primary/20',
     textColor: 'text-primary'

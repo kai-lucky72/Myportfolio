@@ -26,7 +26,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({ scrollToSection }) => {
               <span className="bg-gradient-to-r from-primary to-[#0EA5E9] bg-clip-text text-transparent">Excellence</span>
             </h2>
             <p className="text-gray-300 mb-6 text-lg">
-              Machine learning specialist and software engineer with 3+ years of experience in AI development. Participated in the prestigious Informatics of AI of Africa program, where I developed innovative ML solutions for real-world challenges. Currently developing backend systems at Prime Life Insurance.
+              Machine learning specialist and software engineer with experience in AI development since 2023. Participated in the prestigious Informatics of AI of Africa program (2024-2025), where I developed innovative ML solutions for real-world challenges. Currently developing backend systems at Prime Life Insurance.
             </p>
             <p className="text-gray-300 mb-8 text-lg">
               Passionate about combining cutting-edge AI technologies with sound software engineering practices to create intelligent systems. Winner of the Cyberlympics competition in cyber security, with strong expertise in backend development and ethical hacking. My skills span machine learning, data analysis, cyber security, and full-stack development for creating powerful technical solutions.
@@ -43,11 +43,11 @@ const AboutSection: React.FC<AboutSectionProps> = ({ scrollToSection }) => {
                 <ul className="space-y-4">
                   <li className="text-gray-400">
                     <p className="text-white font-medium">AI & Machine Learning Certification</p>
-                    <p>Informatics of AI of Africa, 2022</p>
+                    <p>Informatics of AI of Africa, 2024</p>
                   </li>
                   <li className="text-gray-400">
-                    <p className="text-white font-medium">BS in Computer Science</p>
-                    <p>University of Rwanda, 2020</p>
+                    <p className="text-white font-medium">Coding Education</p>
+                    <p>Rwanda Coding Academy, 2023</p>
                   </li>
                 </ul>
               </div>
@@ -62,15 +62,15 @@ const AboutSection: React.FC<AboutSectionProps> = ({ scrollToSection }) => {
                 <ul className="space-y-4">
                   <li className="text-gray-400">
                     <p className="text-white font-medium">Backend Developer</p>
-                    <p>Prime Life Insurance, 2023-Present</p>
+                    <p>Prime Life Insurance, 2025-Present</p>
                   </li>
                   <li className="text-gray-400">
                     <p className="text-white font-medium">AI Research Engineer</p>
-                    <p>Informatics of AI of Africa, 2022-2023</p>
+                    <p>Informatics of AI of Africa, 2024-2025</p>
                   </li>
                   <li className="text-gray-400">
                     <p className="text-white font-medium">ML Software Developer</p>
-                    <p>Tech Solutions Lab, 2020-2022</p>
+                    <p>Tech Solutions Lab, 2024</p>
                   </li>
                 </ul>
               </div>
@@ -133,7 +133,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({ scrollToSection }) => {
                 </li>
                 <li className="flex items-start gap-3 text-gray-300">
                   <i className="fas fa-check-circle text-primary mt-1"></i>
-                  <span>Africa AI Hackathon Winner 2023</span>
+                  <span>Africa AI Hackathon Winner 2024</span>
                 </li>
                 <li className="flex items-start gap-3 text-gray-300">
                   <i className="fas fa-check-circle text-primary mt-1"></i>
